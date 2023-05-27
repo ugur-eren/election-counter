@@ -1,49 +1,37 @@
+import {Platform, TextStyle} from 'react-native';
+
+const defaultFontFamily = Platform.select({
+  web: 'Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif',
+  ios: 'System',
+  default: 'sans-serif',
+});
+
 const Typography = {
-  thin: {
-    fontFamily: '',
-    fontWeight: undefined,
-    includeFontPadding: false,
-  },
-  extraLight: {
-    fontFamily: '',
-    fontWeight: undefined,
-    includeFontPadding: false,
-  },
   light: {
-    fontFamily: '',
-    fontWeight: undefined,
+    fontFamily: defaultFontFamily,
+    fontWeight: '300',
     includeFontPadding: false,
   },
   regular: {
-    fontFamily: '',
-    fontWeight: undefined,
+    fontFamily: defaultFontFamily,
+    fontWeight: '400',
     includeFontPadding: false,
   },
   medium: {
-    fontFamily: '',
-    fontWeight: undefined,
+    fontFamily: defaultFontFamily,
+    fontWeight: '500',
     includeFontPadding: false,
   },
   semiBold: {
-    fontFamily: '',
-    fontWeight: undefined,
+    fontFamily: defaultFontFamily,
+    fontWeight: '600',
     includeFontPadding: false,
   },
   bold: {
-    fontFamily: '',
-    fontWeight: undefined,
+    fontFamily: defaultFontFamily,
+    fontWeight: '700',
     includeFontPadding: false,
   },
-  extraBold: {
-    fontFamily: '',
-    fontWeight: undefined,
-    includeFontPadding: false,
-  },
-  black: {
-    fontFamily: '',
-    fontWeight: undefined,
-    includeFontPadding: false,
-  },
-};
+} satisfies Record<string, TextStyle>;
 
 export default Typography;

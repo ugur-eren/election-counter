@@ -1,7 +1,6 @@
 import {Text as NativeText, TextStyle} from 'react-native';
 import {TextProps} from './Text.props';
-import {Typography} from '../../Styles';
-import {useTheme} from '../../Hooks';
+import {Theme, Typography} from '../../Styles';
 
 const Text: React.FC<TextProps> = (props) => {
   const {
@@ -15,12 +14,10 @@ const Text: React.FC<TextProps> = (props) => {
     ...restProps
   } = props;
 
-  const theme = useTheme();
-
   const textStyles: TextStyle = {
     fontSize,
     lineHeight,
-    color: theme.colors[color],
+    color: Theme.colors[color],
     textAlign: align,
 
     ...Typography[weight],

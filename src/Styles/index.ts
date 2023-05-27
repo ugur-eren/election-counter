@@ -1,6 +1,5 @@
 import Spacing from './Spacing';
 import Typography from './Typography';
-import * as Colors from './Colors';
-import * as Theme from './Theme';
+import {Theme} from './Theme';
 
-export {Spacing, Typography, Colors, Theme};
+export {Spacing, Typography, Theme};
