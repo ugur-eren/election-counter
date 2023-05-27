@@ -1,7 +1,8 @@
 import {memo} from 'react';
 import {View} from 'react-native';
+import ControlButtons from './ControlButtons/ControlButtons';
 import {useAppSelector, VotesSelectors} from '../../../Redux';
-import {Button, Text} from '../../../Components';
+import {Text} from '../../../Components';
 import {NumberFormatter} from '../../../Utils/Helpers';
 import styles from './Controls.styles';
 
@@ -28,11 +29,7 @@ const Controls: React.FC = () => {
         </Text>
       </Text>
 
-      <View style={styles.buttons}>
-        <Button>Cihaza Kaydet</Button>
-        <Button backgroundColor="accent">Logları Gör</Button>
-        <Button backgroundColor="backgroundSecondary">Sıfırla</Button>
-      </View>
+      <ControlButtons />
     </View>
   );
 };
