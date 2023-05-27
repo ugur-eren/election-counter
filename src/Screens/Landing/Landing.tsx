@@ -32,13 +32,13 @@ const Landing: React.FC = () => {
         </View>
 
         <Text>
-          Diff : <Text color="textStrong"> K.K +{NumberFormatter.format(1234)}</Text>
+          Fark : <Text color="textStrong"> K.K +{NumberFormatter.format(1234)}</Text>
         </Text>
 
         <View style={styles.buttons}>
-          <Button>Save to Store</Button>
-          <Button backgroundColor="accent">View logs</Button>
-          <Button backgroundColor="backgroundSecondary">Clear</Button>
+          <Button>Cihaza Kaydet</Button>
+          <Button backgroundColor="accent">Logları Gör</Button>
+          <Button backgroundColor="backgroundSecondary">Sıfırla</Button>
         </View>
       </View>
     </SafeAreaView>
