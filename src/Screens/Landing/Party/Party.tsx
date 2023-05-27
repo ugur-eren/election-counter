@@ -17,7 +17,7 @@ const Party: React.FC<PartyProps> = (props) => {
     <View style={[styles.container, styles[party]]}>
       <Touchable style={styles.touchable} onPress={increment}>
         <Text weight="bold" color="textStrong" fontSize={32}>
-          {party === 'rte' ? ':(' : 'Kılıçdaroğlu'}
+          {party === 'rte' ? 'RTE' : 'Kılıçdaroğlu'}
         </Text>
       </Touchable>
 

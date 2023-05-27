@@ -16,7 +16,7 @@ const Controls: React.FC = () => {
     <View style={styles.container}>
       <View>
         <Text>
-          :&#40; : <Text color="textStrong"> {NumberFormatter.format(rteVotes)}</Text>
+          RTE : <Text color="textStrong"> {NumberFormatter.format(rteVotes)}</Text>
         </Text>
 
         <Text>
@@ -26,7 +26,7 @@ const Controls: React.FC = () => {
         <Text>
           Fark :{' '}
           <Text color="textStrong">
-            {winner.winner === 'kk' ? 'K.K' : ':('} +{NumberFormatter.format(winner.diff)}
+            {winner.winner === 'kk' ? 'K.K' : 'RTE'} +{NumberFormatter.format(winner.diff)}
           </Text>
         </Text>
       </View>
