@@ -9,7 +9,11 @@ export const Theme = {
     error: '#ff4747',
     text: '#dbdbdb',
     textLight: '#d8d8d8',
-    textStrong: '#dedede',
+    textStrong: '#ffffff',
+
+    // Parties
+    akp: '#F58120',
+    chp: '#E74C3C',
   },
   gradients: {},
 };

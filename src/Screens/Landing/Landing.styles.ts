@@ -1,5 +1,5 @@
 import {StyleSheet} from 'react-native';
-import {Spacing} from '../../Styles';
+import {Spacing, Theme} from '../../Styles';
 
 export default StyleSheet.create({
   container: {
@@ -17,6 +17,12 @@ export default StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  partyAKP: {
+    backgroundColor: Theme.colors.akp,
+  },
+  partyCHP: {
+    backgroundColor: Theme.colors.chp,
   },
 
   controls: {},

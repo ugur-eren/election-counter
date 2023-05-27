@@ -7,14 +7,16 @@ const Landing: React.FC = () => {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.parties}>
-        <View style={styles.party}>
-          <Text style={styles.partyLogo}>Party Logo</Text>
-          <Text style={styles.partyText}>Party 1</Text>
+        <View style={[styles.party, styles.partyAKP]}>
+          <Text weight="bold" color="textStrong" fontSize={32}>
+            :&#40;
+          </Text>
         </View>
 
-        <View style={styles.party}>
-          <Text style={styles.partyLogo}>Party Logo</Text>
-          <Text style={styles.partyText}>Party 2</Text>
+        <View style={[styles.party, styles.partyCHP]}>
+          <Text weight="bold" color="textStrong" fontSize={32}>
+            Kılıçdaroğlu
+          </Text>
         </View>
       </View>
 
