@@ -27,3 +27,7 @@ State is persisted so you can close the app and open it again and continue count
 ## TODO
 
 - Win the election
+
+## Screenshot
+
+![Screenshot_1685218568](https://github.com/ugur-eren/election-counter/assets/86152092/fdffdc6b-cf0d-4fd5-8911-12c380a6884b)
