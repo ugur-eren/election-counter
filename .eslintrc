@@ -92,6 +92,12 @@
       "rules": {
         "@typescript-eslint/camelcase": "off"
       }
+    },
+    {
+      "files": ["src/Redux/**/*.ts"],
+      "rules": {
+        "no-param-reassign": "off"
+      }
     }
   ]
 }
