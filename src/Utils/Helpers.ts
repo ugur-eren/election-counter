@@ -14,3 +14,5 @@ export const StatusBarHeight = IsIOS ? 0 : StatusBar.currentHeight || 0;
  * for both Android and IOS platforms.
  */
 export const OnlyNumericPad = IsIOS ? 'number-pad' : 'numeric';
+
+export const NumberFormatter = Intl.NumberFormat('tr', {compactDisplay: 'short'});

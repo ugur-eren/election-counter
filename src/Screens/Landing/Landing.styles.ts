@@ -6,12 +6,13 @@ export default StyleSheet.create({
     flex: 1,
     padding: Spacing.pagePadding,
     flexDirection: 'row',
+    gap: Spacing.normal,
   },
 
   parties: {
     flex: 1,
     flexDirection: 'row',
-    gap: Spacing.small,
+    gap: Spacing.medium,
   },
   party: {
     flex: 1,
@@ -25,5 +26,13 @@ export default StyleSheet.create({
     backgroundColor: Theme.colors.chp,
   },
 
-  controls: {},
+  controls: {
+    gap: Spacing.normal,
+  },
+  counts: {
+    flex: 1,
+  },
+  buttons: {
+    gap: Spacing.xsmall,
+  },
 });

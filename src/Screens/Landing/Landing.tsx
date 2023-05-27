@@ -1,11 +1,12 @@
 import {View} from 'react-native';
 import {SafeAreaView} from 'react-native-safe-area-context';
-import {Text} from '../../Components';
+import {Button, Text} from '../../Components';
 import styles from './Landing.styles';
+import {NumberFormatter} from '../../Utils/Helpers';
 
 const Landing: React.FC = () => {
   return (
-    <SafeAreaView style={styles.container}>
+    <SafeAreaView edges={['top', 'bottom', 'left']} style={styles.container}>
       <View style={styles.parties}>
         <View style={[styles.party, styles.partyAKP]}>
           <Text weight="bold" color="textStrong" fontSize={32}>
@@ -22,14 +23,22 @@ const Landing: React.FC = () => {
 
       <View style={styles.controls}>
         <View style={styles.counts}>
-          <Text style={styles.countText}>Party 1: 0</Text>
-          <Text style={styles.countText}>Party 2: 0</Text>
+          <Text>
+            :&#40; : <Text color="textStrong"> {NumberFormatter.format(1234567)}</Text>
+          </Text>
+          <Text>
+            K.K : <Text color="textStrong"> {NumberFormatter.format(1234567)}</Text>
+          </Text>
         </View>
 
+        <Text>
+          Diff : <Text color="textStrong"> K.K +{NumberFormatter.format(1234)}</Text>
+        </Text>
+
         <View style={styles.buttons}>
-          <Text style={styles.button}>Save to Store</Text>
-          <Text style={styles.button}>View all logs</Text>
-          <Text style={styles.button}>Clear</Text>
+          <Button>Save to Store</Button>
+          <Button backgroundColor="accent">View logs</Button>
+          <Button backgroundColor="backgroundSecondary">Clear</Button>
         </View>
       </View>
     </SafeAreaView>

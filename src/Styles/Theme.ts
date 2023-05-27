@@ -1,8 +1,8 @@
 export const Theme = {
   colors: {
     transparent: 'transparent',
-    primary: '#8775FF',
-    accent: '#FFBE28',
+    primary: '#0094CD',
+    accent: '#FF9782',
     background: '#242424',
     backgroundSecondary: '#272727',
     success: '#74D0AC',
