@@ -6,6 +6,14 @@ Tech stack is just a simple React Native w/ Expo app with Redux for state manage
 
 State is persisted so you can close the app and open it again and continue counting.
 
+## Expo Snack
+
+You can try the app on your phone with Expo Snack. Just open the link below and scan the QR code with Expo app.
+
+[https://snack.expo.dev/@truetiem/github.com-ugur-eren-election-counter](https://snack.expo.dev/@truetiem/github.com-ugur-eren-election-counter)
+
+> However, snack currently only supports SDK 47, so it's not up to date with the repo. For example, the new flex gap feature in React Native is not supported on Expo Snack. I'll update it when it's possible.
+
 ## How to run
 
 1. Clone the repo
