@@ -1,11 +1,14 @@
 import {StyleSheet} from 'react-native';
-import {Spacing} from '../../../Styles';
+import {Spacing, Theme} from '../../../Styles';
 
 export default StyleSheet.create({
   container: {
-    gap: Spacing.normal,
+    gap: Spacing.small,
   },
-  counts: {
+
+  logs: {
     flex: 1,
+    backgroundColor: Theme.colors.backgroundSecondary,
+    padding: Spacing.xxxsmall,
   },
 });

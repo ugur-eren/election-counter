@@ -20,8 +20,6 @@ const ControlButtons: React.FC = () => {
     <View style={styles.container}>
       <Button onPress={onSavePress}>Cihaza Kaydet</Button>
 
-      <Button backgroundColor="accent">Logları Gör</Button>
-
       <Button onPress={onResetPress} backgroundColor="backgroundSecondary">
         Sıfırla
       </Button>

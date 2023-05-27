@@ -15,4 +15,10 @@ export const StatusBarHeight = IsIOS ? 0 : StatusBar.currentHeight || 0;
  */
 export const OnlyNumericPad = IsIOS ? 'number-pad' : 'numeric';
 
-export const NumberFormatter = Intl.NumberFormat('tr', {compactDisplay: 'short'});
+export const NumberFormatter = new Intl.NumberFormat('tr', {compactDisplay: 'short'});
+
+export const OnlyTimeFormatter = new Intl.DateTimeFormat('tr', {
+  hour: 'numeric',
+  minute: 'numeric',
+  second: 'numeric',
+});
