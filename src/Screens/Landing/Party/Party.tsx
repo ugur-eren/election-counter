@@ -10,15 +10,24 @@ const Party: React.FC<PartyProps> = (props) => {
 
   const dispath = useAppDispatch();
 
-  const onPress = () => dispath(VotesActions.increment(party));
+  const increment = () => dispath(VotesActions.increment(party));
+  const decrement = () => dispath(VotesActions.decrement(party));
 
   return (
     <View style={[styles.container, styles[party]]}>
-      <Touchable style={styles.touchable} onPress={onPress}>
+      <Touchable style={styles.touchable} onPress={increment}>
         <Text weight="bold" color="textStrong" fontSize={32}>
           {party === 'rte' ? ':(' : 'Kılıçdaroğlu'}
         </Text>
       </Touchable>
+
+      <View style={styles.decrement}>
+        <Touchable style={styles.decrementTouchable} onPress={decrement}>
+          <Text weight="bold" color="textStrong" fontSize={32} lineHeight={32}>
+            -
+          </Text>
+        </Touchable>
+      </View>
     </View>
   );
 };

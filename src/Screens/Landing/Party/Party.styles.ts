@@ -17,4 +17,18 @@ export default StyleSheet.create({
   kk: {
     backgroundColor: Theme.colors.chp,
   },
+
+  decrement: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    backgroundColor: Theme.colors.accent,
+    width: 30,
+    height: 30,
+  },
+  decrementTouchable: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
 });
