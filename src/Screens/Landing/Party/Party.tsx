@@ -8,10 +8,10 @@ import styles from './Party.styles';
 const Party: React.FC<PartyProps> = (props) => {
   const {party} = props;
 
-  const dispath = useAppDispatch();
+  const dispatch = useAppDispatch();
 
-  const increment = () => dispath(VotesActions.increment(party));
-  const decrement = () => dispath(VotesActions.decrement(party));
+  const increment = () => dispatch(VotesActions.increment(party));
+  const decrement = () => dispatch(VotesActions.decrement(party));
 
   return (
     <View style={[styles.container, styles[party]]}>

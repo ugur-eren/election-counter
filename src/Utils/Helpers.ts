@@ -17,7 +17,7 @@ export const OnlyNumericPad = IsIOS ? 'number-pad' : 'numeric';
 
 export const NumberFormatter = new Intl.NumberFormat('tr', {compactDisplay: 'short'});
 
-export const OnlyTimeFormatter = new Intl.DateTimeFormat('tr', {
+export const TimeFormatter = new Intl.DateTimeFormat('tr', {
   hour: 'numeric',
   minute: 'numeric',
   second: 'numeric',

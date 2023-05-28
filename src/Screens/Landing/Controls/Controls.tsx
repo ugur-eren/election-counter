@@ -3,7 +3,7 @@ import {FlatList, View} from 'react-native';
 import ControlButtons from './ControlButtons/ControlButtons';
 import {useAppSelector, VotesSelectors} from '../../../Redux';
 import {Text} from '../../../Components';
-import {NumberFormatter, OnlyTimeFormatter} from '../../../Utils/Helpers';
+import {NumberFormatter, TimeFormatter} from '../../../Utils/Helpers';
 import styles from './Controls.styles';
 
 const Controls: React.FC = () => {
@@ -40,7 +40,8 @@ const Controls: React.FC = () => {
           maxToRenderPerBatch={20}
           renderItem={({item}) => (
             <Text>
-              {OnlyTimeFormatter.format(item.time)} {item.to} {item.vote === 'up' ? '+' : '-'}
+              {TimeFormatter.format(item.time)} {item.to === 'kk' ? 'K.K' : 'RTE'}{' '}
+              {item.vote === 'up' ? '+' : '-'}
             </Text>
           )}
         />

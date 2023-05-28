@@ -5,7 +5,7 @@ import {Button} from '../../../../Components';
 import styles from './ControlButtons.styles';
 
 const ControlButtons: React.FC = () => {
-  const dispath = useAppDispatch();
+  const dispatch = useAppDispatch();
 
   const onSavePress = () => {
     persistor.flush();
@@ -22,7 +22,7 @@ const ControlButtons: React.FC = () => {
         text: 'Evet',
         style: 'destructive',
         onPress: () => {
-          dispath(VotesActions.clear());
+          dispatch(VotesActions.clear());
           persistor.purge();
         },
       },
